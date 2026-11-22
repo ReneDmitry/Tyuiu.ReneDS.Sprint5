@@ -17,6 +17,7 @@ namespace Tyuiu.ReneDS.Sprint5.Task0.V29.Lib
 
             File.WriteAllText(path, res.ToString("F3"));
 
+
             return path;
         }
     }

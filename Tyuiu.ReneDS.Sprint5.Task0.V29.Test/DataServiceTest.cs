@@ -17,9 +17,11 @@ namespace Tyuiu.ReneDS.Sprint5.Task0.V29.Test
                 "OutPutFileTask0.txt");
 
             Assert.AreEqual(expectedPath, path);
+
             Assert.IsTrue(File.Exists(path));
 
             string wait = 169.890.ToString("F3");
+
             string res = File.ReadAllText(path);
 
             Assert.AreEqual(wait, res);
