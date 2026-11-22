@@ -12,7 +12,7 @@ namespace Tyuiu.ReneDS.Sprint5.Task0.V29.Lib
             double res = 6.1 * Math.Pow(x, 3) + 0.23 * Math.Pow(x, 2) + 1.04 * x;
             res = Math.Round(res, 3);
 
-            File.WriteAllText(path, res.ToString("F3"));
+            File.WriteAllText(path, res.ToString());
 
             return path;
         }

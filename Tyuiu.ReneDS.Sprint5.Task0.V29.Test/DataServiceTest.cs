@@ -15,7 +15,7 @@ namespace Tyuiu.ReneDS.Sprint5.Task0.V29.Test
 
             Assert.AreEqual(expectedPath, path);
             Assert.IsTrue(File.Exists(path));
-            Assert.AreEqual(169.890.ToString("F3"), File.ReadAllText(path));
+            Assert.AreEqual(169.89.ToString("F3"), File.ReadAllText(path));
         }
     }
 }
