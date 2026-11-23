@@ -26,7 +26,7 @@ namespace Tyuiu.ReneDS.Sprint5.Task4.V25
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "InPutFileTask4.txt");
+            string path = @"C:\DataSprint5\InPutDataFileTask4V25.txt";
             Console.WriteLine("Данные находятся в файле: " + path);
 
             if (!File.Exists(path))
