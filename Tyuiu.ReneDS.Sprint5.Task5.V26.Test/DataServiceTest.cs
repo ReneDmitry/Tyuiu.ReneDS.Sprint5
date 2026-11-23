@@ -13,11 +13,11 @@ namespace Tyuiu.ReneDS.Sprint5.Task5.V26.Test
 
             try
             {
-                File.WriteAllLines(path, new[] { "2,25", "-1,5", "3.1254", "-0.25", "0" });
+                File.WriteAllLines(path, new[] { "2,25", "-1,5", "3.1254", "-0.25", "14", "-9", "0" });
 
                 double res = ds.LoadFromDataFile(path);
 
-                Assert.AreEqual(3.625, res, 0.000001);
+                Assert.AreEqual(7.125, res, 0.000001);
             }
             finally
             {

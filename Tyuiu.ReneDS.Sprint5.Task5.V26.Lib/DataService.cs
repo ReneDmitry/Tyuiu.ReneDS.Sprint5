@@ -23,18 +23,22 @@ namespace Tyuiu.ReneDS.Sprint5.Task5.V26.Lib
                     NumberStyles.Float,
                     CultureInfo.InvariantCulture);
 
+                if (number == Math.Truncate(number))
+                {
+                    continue;
+                }
+
                 if (number > 0)
                 {
                     positiveSum += number;
                 }
-                else if (number < 0)
+                else
                 {
                     negativeSum += number;
                 }
             }
 
-            double res = Math.Round(positiveSum - Math.Abs(negativeSum), 3);
-            return res;
+            return Math.Round(positiveSum - negativeSum, 3);
         }
     }
 }
