@@ -33,7 +33,7 @@ namespace Tyuiu.ReneDS.Sprint5.Task5.V26.Lib
                 }
             }
 
-            double res = Math.Round(positiveSum - negativeSum, 3);
+            double res = Math.Round(positiveSum - Math.Abs(negativeSum), 3);
             return res;
         }
     }

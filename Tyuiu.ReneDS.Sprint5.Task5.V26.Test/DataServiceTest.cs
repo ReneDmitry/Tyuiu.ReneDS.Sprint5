@@ -17,7 +17,7 @@ namespace Tyuiu.ReneDS.Sprint5.Task5.V26.Test
 
                 double res = ds.LoadFromDataFile(path);
 
-                Assert.AreEqual(7.125, res, 0.000001);
+                Assert.AreEqual(3.625, res, 0.000001);
             }
             finally
             {
